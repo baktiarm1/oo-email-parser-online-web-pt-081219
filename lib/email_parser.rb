@@ -12,7 +12,7 @@ class EmailAddressParser
   
   def initialize(string)
     @string = []
-    @string << self.parse(string)
+    @string <<
   end 
   
  
