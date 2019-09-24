@@ -6,7 +6,7 @@
 class EmailAddressParser
   attr_accessor :string
   
-   def self.parse(string)
+   def parse(string)
     string.split(/[, ]/).uniq
   end 
   
