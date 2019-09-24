@@ -5,16 +5,14 @@
 
 class EmailAddressParser
   attr_accessor :string
-  
-   def parse(string)
-    string.split(/[, ]/).uniq
-  end 
+
   
   def initialize(string)
-    @string = []
-    @string <<
+    @string = string
   end 
   
- 
+  def parse(string)
+    string.split(/[, ]/).uniq
+  end 
   
 end 
